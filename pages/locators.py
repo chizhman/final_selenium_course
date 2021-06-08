@@ -4,6 +4,7 @@ from .base_page import BasePage
 
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    SWITCH_TO_BASKET = (By.CSS_SELECTOR, ".basket-mini a.btn.btn-default")
 
 
 class LoginPage(BasePage):

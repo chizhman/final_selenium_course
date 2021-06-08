@@ -1,6 +1,6 @@
 from .base_page import BasePage
 from .locators import MainPageLocators, LoginPage
-import time
+# import time
 
 
 class MainPage(BasePage):
@@ -16,3 +16,10 @@ class MainPage(BasePage):
         assert "login" in self.browser.current_url, "This is url not for login page"
         assert self.is_element_present(*LoginPage.should_be_login_form(LoginPage)), "There is no login form on this page"
         assert self.is_element_present(*LoginPage.should_be_register_form(LoginPage)), "There is no register form on this page"
+
+
+
+
+# class MainPage(BasePage):
+#     def __init__(self, *args, **kwargs):
+#         super(MainPage, self).__init__(*args, **kwargs)

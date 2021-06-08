@@ -17,3 +17,7 @@ class BasePage():
         except NoSuchElementException:
             return False
         return True
+
+    def go_to_basket(self):
+        switch = self.browser.find_element(*MainPageLocators.SWITCH_TO_BASKET)
+        switch.click()
